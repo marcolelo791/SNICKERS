@@ -1,71 +1,49 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Play</title>
 
-    <title>Cadastro de Alunos</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-    <main class="container">
+<header>
+    <a href="index.html">
+      
+    </a>
 
-        <h1>Cadastro de Alunos</h1>
+    <nav>
+        <a href="projeto.html">Projeto</a>
+        <a href="#">Ranking</a>
+        <a href="#">Login</a>
+        <a href="#">Cadastro</a>
+    </nav>
+</header>
 
-        <section class="formulario">
+<main>
+    <canvas id="pixel-bg" aria-hidden="true"></canvas>
 
-            <h2>Informações do aluno</h2>
+    <section class="hero">
+        <h1><span>PIXEL</span> <span>PLAY</span></h1>
 
-            <label for="nome">Nome:</label>
-            <input
-                type="text"
-                id="nome"
-                placeholder="Digite o nome do aluno"
-            >
+        <p class="subtitle">
+            O site de jogos que ajuda você a aprender programação enquanto joga.
+        </p>
 
-            <label for="idade">Idade:</label>
-            <input
-                type="number"
-                id="idade"
-                placeholder="Digite a idade"
-            >
+        <a href="jogar.html" class="btn">Começar a jogar</a>
+        <p class="hint">ou aperte Enter</p>
+    </section>
+</main>
 
-            <button id="btnCadastrar">Cadastrar</button>
+<footer>
+    &copy; desenvolvido por RATAIADA
+</footer>
 
-            <p id="mensagem"></p>
-
-        </section>
-
-        <section class="informacoes">
-
-            <h2>Informações do projeto</h2>
-
-            <p>Nome: <span id="nomeInfo"></span></p>
-            <p>Idade: <span id="idadeInfo"></span></p>
-            <p>Curso: <span id="cursoInfo"></span></p>
-
-        </section>
-
-        <section class="resultado">
-
-            <h2>Alunos cadastrados</h2>
-
-            <p id="totalAlunos">Total de alunos: 0</p>
-
-            <ul id="listaAlunos"></ul>
-
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
-
+<script src="assets/js/script.js"></script>
 </body>
-
 </html>
-```
